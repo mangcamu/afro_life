@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <title>Afro-Life Art</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href="afroServices.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Company Logo" class="responsive">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="afroHome.html">Home</a></li>
+                    <li><a href="afroServices.html">Services</a></li>
+                    <li><a href="afroBlog.html">Blog</a></li>
+                    <li><a href="afroNews.html">News</a></li>
+                    <li><a href="afroContact.html">Contact</a></li>
+                    <li><a href="afroAbout.html">About</a></li>
+                 </ul>
+            </div>
+        </div>
+        <section class="fakeImage">
+          <div class="murals">
+            <h1>Murals</h1>
+          </div>
+          <div class="paintings">
+            <h1>Paintings</h1>
+          </div>
+
+          <!-- The grid: four columns -->
+          <div class="row">
+            <div class="column">
+              <img src="images/table.jpg" width="300" height="200" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/eye.jpg" width="300" height="200" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/mural.jpg" width="300" height="200" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/mural1.jpg" width="300" height="200" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/mural2.jpg" width="300" height="200" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/mural3.jpg" width="300" height="200" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/mural4.jpg" width="300" height="200" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <div class="myrow">
+            <div class="mycolumn">
+              <img src="images/painting.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting1.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting2.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting4.jpg" width="300" height="200" onclick="mmyImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting8.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting3.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting5.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting5.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+            <div class="mycolumn">
+              <img src="images/painting6.jpg" width="300" height="200" onclick="myImages(this);">
+            </div>
+          </div>
+          <!-- The expanding image container 
+          <div class="container">
+             Close the image 
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          
+             Expanded image 
+            <img id="expandedImg" style="width: 100%">   width="600" height="600"
+             Image text 
+            <div id="imgtext"></div>
+          </div>--> 
+         
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+</body>
+</html>
